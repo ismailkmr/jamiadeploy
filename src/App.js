@@ -13,16 +13,16 @@ import Dashboard from './components/Dashboard';
 
 function App() {
   const [data, setData] = useState(null);
-  useEffect(() => {
-    axios.get('http://localhost:3001/getList')
-      .then((response) => {
-        setData(response.data);
-        console.log(response.data)
-      })
-      .catch((error) => {
-      });
+  // useEffect(() => {
+  //   axios.get('http://localhost:3001/getList')
+  //     .then((response) => {
+  //       setData(response.data);
+  //       console.log(response.data)
+  //     })
+  //     .catch((error) => {
+  //     });
       
-  }, []);
+  // }, []);
 
   return (
     <Router>
